@@ -1,4 +1,5 @@
 public class A {
+    public static final String MONDAY = "MONDAY";
     public void methodA1() {
 
     };
