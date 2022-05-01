@@ -6,11 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="photo" />
-        <module name="main" />
-        <module name="messenger" />
-        <module name="friends" />
-        <module name="profile" />
+        <module name="hw_8_serialization" />
       </profile>
     </annotationProcessing>
   </component>
