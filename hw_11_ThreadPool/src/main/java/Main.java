@@ -2,7 +2,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        FixedThreadPool threadPool = new FixedThreadPool(5);
+//        ThreadPool threadPool = new FixedThreadPool(5);
+
+        // TODO fix InterruptedException
+
+        ThreadPool threadPool = new ScalableThreadPool(5, 10);
 
         threadPool.start();
 
