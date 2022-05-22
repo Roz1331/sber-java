@@ -43,7 +43,7 @@ public class FixedThreadPool implements ThreadPool{
             while(true) {
                 synchronized (queue) {
                     while(queue.isEmpty()) {
-                        System.out.println(this.getName() + " is ready");
+//                        System.out.println(this.getName() + " is ready");
                         try {
                             queue.wait();
                         } catch (InterruptedException e) {

@@ -63,7 +63,6 @@ public class ScalableThreadPool implements ThreadPool{
             while(true) {
                 synchronized (queue) {
                     while(queue.isEmpty()) {
-                        System.out.println(this.getName() + " is ready");
                         try {
                             CheckThreadsNumber();
 
