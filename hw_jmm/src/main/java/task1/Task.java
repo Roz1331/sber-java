@@ -14,11 +14,13 @@ public class Task<T> {
 
     public T get() throws MyCoolException {
 
+        // ошибочка где-то случилась
         if(exception != null) {
             System.out.println("my exception");
             throw exception;
         }
 
+        // ну дык посчитали ж уже результат
         if (result != null) {
             System.out.println("cash");
             return result;
