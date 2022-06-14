@@ -9,4 +9,6 @@
 
     <context:component-scan base-package="ri.hw.spring" />
 
+    <context:property-placeholder location="classpath:application.properties"/>
+
 </beans>
