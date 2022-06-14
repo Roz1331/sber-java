@@ -28,6 +28,7 @@ public class FixedThreadPool implements ThreadPool{
         queue = new LinkedList<>();
     }
 
+    @Autowired
     @Override
     public void start() {
         for (int i = 0; i < threadsNumber; i++) {
