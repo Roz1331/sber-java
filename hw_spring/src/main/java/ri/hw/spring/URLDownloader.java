@@ -1,7 +1,6 @@
 package ri.hw.spring;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.FileOutputStream;
@@ -14,8 +13,6 @@ import java.util.List;
 
 @Component("URLDownloader")
 public class URLDownloader {
-    @Value("${URLDownloader.filePath}")
-    private String filePath;
 
     private FileParser fileParser;
     private FixedThreadPool fixedThreadPool;
@@ -24,10 +21,6 @@ public class URLDownloader {
     public URLDownloader(FileParser fileParser, FixedThreadPool fixedThreadPool) {
         this.fileParser = fileParser;
         this.fixedThreadPool = fixedThreadPool;
-    }
-
-    public String getFilePath() {
-        return filePath;
     }
 
     public void downloadAll() {

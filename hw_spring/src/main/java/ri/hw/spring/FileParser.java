@@ -12,7 +12,7 @@ import java.util.List;
 
 @Component
 public class FileParser {
-    @Value("${URLDownloader.filePath}")
+    @Value("${FileParser.filePath}")
     private String filePath;
 
     public List<URL> getAllLines() {
