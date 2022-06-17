@@ -1,12 +1,12 @@
 package ru.example.recipeBook;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
+//import org.junit.jupiter.api.Test;
+//import org.springframework.boot.test.context.SpringBootTest;
+//
+//@SpringBootTest
 class RecipeBookApplicationTests {
 
-	@Test
+//	@Test
 	void contextLoads() {
 	}
 
